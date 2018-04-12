@@ -67,7 +67,7 @@ def rouge3(machineSummary, humanSummary):
     Tri_length = len(set([Tri_item for Tri_item in BigramMachineList if Tri_item in BigramhumanList]))
     Tri_totalLegth = len(BigramhumanList)
 
-    rouge3 = round((Tri_length+1)/(Tri_totalLegth+1),3)
+    rouge3 = round(Tri_length/Tri_totalLegth,3)
     # print "rouge2 =", rouge3
 
     return rouge3
